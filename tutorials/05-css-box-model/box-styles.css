@@ -1,0 +1,18 @@
+h1, p {
+    background-color: #dde0e3;
+}
+
+em, strong {
+    background-color: #b2d6ff;
+    display: inline;
+}
+
+h1 {
+    padding: 50px;
+    border-bottom: 1px solid #5d6063;
+}
+
+p {
+    padding: 1.5em 0 1.5em 0.75em;
+    margin-bottom: 50px;
+}
