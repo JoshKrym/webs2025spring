@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    display: inline;
+}
+
+.tile {
+    padding-left: 10px;
+    flex-basis: 320px;
+    outline-color: black;
+    outline-style: solid;
+}
+
+.online {
+    color: green;
+    display: inline;
+    border-radius: 25px;
+    width: 24px;
+    height: 24px;
+    float: right;   
+    font-size: 72px;
+    margin-top: -24px;
+}
+
+.tile .computerImage {
+    width: 256px;
+}
+
+
+.tile h2 {
+    color: black;
+    width: 192px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+}
+
+#computers {
+    color: blue;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+#menu {
+    float: right;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
