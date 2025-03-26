@@ -1,0 +1,9 @@
+{ "Computers": [
+    {"name": "Desktop 1", "IPAddress": "10.200.200.3", "Image": "Image.png"},
+    {"name": "Laptop 1", "IPAddress": "10.200.200.2", "Image": "Image.png"},
+    {"name": "Arch USB", "IPAddress": "10.200.200.6", "Image": "Image.png"},
+    {"name": "Debian Laptop Server", "IPAddress": "10.200.200.1", "Image": "Image.png"},
+    {"name": "IPhone", "IPAddress": "10.200.200.4", "Image": "Image.png"},
+    {"name": "Raspberry Pi", "IPAddress": "10.200.200.7", "Image": "Image.png"},
+    {"name": "IPad", "IPAddress": "10.200.200.8", "Image": "Image.png"}
+]}
