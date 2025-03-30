@@ -4,7 +4,7 @@ import { useState }  from "react";
 import $ from 'jquery'
 import { ajax } from "jquery";
 import Computers from "../src/api/computers.json";
-import fs from 'fs';
+import handler from "./test"
 //const fs = require('fs');
 
 export default function Home() {
@@ -31,13 +31,25 @@ export default function Home() {
 }
 
 function NewForm({computers}){
-    <form action={WriteComputerData}>
-        <input name="name" />
-        <input name="IPAddress" />
-        <input type="submit" value="Submit" />
-    </form>
+    return (
+        <form action={handler}>
+            <input name="name" />
+            <input name="IPAddress" />
+            <input type="submit" value="Submit" />
+        </form>
+    )
 }
 
 export async function WriteComputerData({formData}){
     fs.writeFileSync("../api/computers.json", JSON.stringify(formData))
 }
+
+function MenuItem({height, width, color, className}){
+    return (
+        <span className={className}>
+        <svg xmlns="http://www.w3.org/2000/svg" height={height} viewBox="0 -960 960 960" width={width} fill={color}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </span>
+    )
+
+}
+

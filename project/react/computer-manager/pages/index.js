@@ -11,17 +11,17 @@ export default function Home() {
     console.log(Computers["Computers"]);
   return (
       <div>
-      <header>
-        <h1>
+      <div style={{display: 'inline'}}>
+        <span className={styles.h1}>
             Device Manager
-        </h1>
+        </span>
         <MenuItem
             height={32}
             width={32}
             color="#00FFFF"
             className={styles.menu}
       />
-    </header>
+    </div>
     <div>
         <div className={styles.computers}>
             <GetComputers computers={Computers["Computers"]}/>
