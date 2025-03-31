@@ -29,8 +29,28 @@ export default function Home() {
     </div>
     <div>
         <div className={styles.content}>
-            <div className={styles.computers}>
-                <GetComputers computers={Computers["Computers"]}/>
+            <div>
+            <h2>
+                Computer 1
+            </h2>
+            <h3>
+                10.200.200.10
+            </h3>
+            <span>
+                <Image
+                     className={styles.computerImage}
+                     src="/laptop_windows.svg"
+                     alt="Next.js logo"
+                     width={512}
+                     height={512}
+                     priority
+                />
+                <ul>
+                    <li>one</li>
+                    <li>one</li>
+                    <li>one</li>
+                </ul>
+            </span>
             </div>
             <ThisContext.Provider value={sidebarHidden}>
                 <div className={styles.sidebar} style={{display: sidebarHidden}}>
