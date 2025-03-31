@@ -2,13 +2,17 @@
 
 import Image from "next/image";
 import styles from "../src/app/page.module.css";
-import { useState }  from "react";
+import { useState, createContext }  from "react";
 import $ from 'jquery'
 import { ajax } from "jquery";
 import Computers from "../src/api/computers.json";
 
+const ThisContext = createContext();
+
+
 export default function Home() {
-    console.log(Computers["Computers"]);
+  const [sidebarHidden, setSidebarHidden] = useState('block');
+  console.log(Computers["Computers"]);
   return (
       <div>
       <div style={{display: 'inline'}}>
@@ -20,11 +24,24 @@ export default function Home() {
             width={32}
             color="#00FFFF"
             className={styles.menu}
+            onClick={{ThisTest}}
       />
     </div>
     <div>
-        <div className={styles.computers}>
-            <GetComputers computers={Computers["Computers"]}/>
+        <div className={styles.content}>
+            <div className={styles.computers}>
+                <GetComputers computers={Computers["Computers"]}/>
+            </div>
+            <ThisContext.Provider value={sidebarHidden}>
+                <div className={styles.sidebar} style={{display: sidebarHidden}}>
+                    <ul>
+                        <li>one</li>
+                        <li>one</li>
+                        <li>one</li>
+                        <li>one</li>
+                    </ul>
+                </div>
+            </ThisContext.Provider>
         </div>
     </div>
     <footer>
@@ -41,9 +58,13 @@ function GetComputers({computers}){
     return myComputers
 }
 
-function MenuItem({height, width, color, className}){
+function ThisTest(){
+    console.log("here");
+}
+
+function MenuItem({height, width, color, className, onClick}){
     return (
-        <span className={className}>
+        <span className={className} onClick={onClick}>
         <svg xmlns="http://www.w3.org/2000/svg" height={height} viewBox="0 -960 960 960" width={width} fill={color}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" style={{display: 'inline'}}/></svg>
         </span>
     )

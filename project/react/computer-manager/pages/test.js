@@ -1,9 +1,9 @@
-'use server'
-import fs from 'fs'
+'use strict'
+const fs = require('fs')
 
 export default async function handler (req, res){
     console.log(req);
     console.log(res);
-    //fs.writeFileSync('./test/json', JSON.stringify);
+    fs.readFileSync('./test/json', req);
     //return res.status(200).json({});
 }

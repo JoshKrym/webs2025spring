@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "fs": "^0.0.1-security",
     "jquery": "^3.7.1",
     "next": "15.2.3",
     "react": "^19.0.0",
