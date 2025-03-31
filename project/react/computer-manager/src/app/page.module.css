@@ -92,6 +92,10 @@ header {
     background-color: red;
 }
 
+.menu:hover~.sidebar{
+    display:block;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
