@@ -29,8 +29,10 @@ export default function Home(Content) {
     </div>
     <div>
         <div className={styles.content}>
-            <div className={styles.computers}>
-                <Content>
+            <div className={styles.pageContent}>
+                <div className={styles.computers}>
+                    This
+                </div>
             </div>
             <ThisContext.Provider value={sidebarHidden}>
                 <div className={styles.sidebar} style={{display: sidebarHidden}}>
