@@ -4,7 +4,7 @@
 - node
 - nextjs
 
-In order to run this, go into the directory named project, then the react directory, then the computer-manager directory. Inside this computer, run the command npm run dev, this will allow you to run a development version of the server
+In order to run this, go into the directory named project, then the react directory, then the computer-manager directory. Inside this computer, run the command `npm run dev`, this will allow you to run a development version of the server. In the computer-manager folder, run the command `npm install`. 
 
 # Project 3: Website Portfolio
 
