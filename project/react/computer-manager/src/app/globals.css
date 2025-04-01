@@ -1,6 +1,21 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background0: #fbf1c7;
+  --background1: #ebdbb2;
+  --background2: #d5c4a1;
+  --background3: #bdae93;
+  --background4: #a89984;
+  --red: #9d0006;
+  --green: #79740e;
+  --yellow: #b57614;
+  --blue: #076678;
+  --purple: #8f3f71;
+  --aqua: #427b58;
+  --orange: #af3a03;
+  --foreground0: #282828;
+  --foreground1: #3c3836;
+  --foreground2: #504945;
+  --foreground3: #665c54;
+  --foreground4: #7c6f64;
 }
 /*
 @media (prefers-color-scheme: dark) {
@@ -17,8 +32,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--foreground0);
+  background: var(--background0);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

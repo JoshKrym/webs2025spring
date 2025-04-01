@@ -1,5 +1,5 @@
 import { Base, logThis } from "./base"
-import styles from "../src/app/index.module.css"
+import styles from "../src/app/addComputer.module.css"
 import { useState }  from "react";
 import Computers from "../src/api/computers.json";
 import Image from "next/image";
@@ -7,9 +7,27 @@ import Image from "next/image";
 export default function This(){
     return (
         <Base>
-            <div className={styles.computers}>
-                <GetComputers computers={Computers["Computers"]}/>
+            <h2>
+                Desktop 1
+            </h2>
+            <div style={{display: "flex"}}>
+                <Image
+                     className={styles.computerImage}
+                     src="/laptop_windows.svg"
+                     alt="Next.js logo"
+                     width={512}
+                     height={512}
+                     priority
+                     />
+                <ul className={styles.features}>
+                    <li>One</li>
+                    <li>One</li>
+                    <li>One</li>
+                    <li>One</li>
+                    <li>One</li>
+                </ul>
             </div>
+
         </Base>
     );
 }

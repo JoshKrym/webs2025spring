@@ -1,44 +1,3 @@
-/*body {
-    margin: 0px;
-}
-
-h1 {
-    text-align: center;
-    display: inline;
-}
-
-header {
-    display: inline;
-    background-color: red;
-    color: green;
-}*/
-
-.content {
-    display: flex;
-}
-
-.sidebar {
-    background-color: red;
-    display: none;
-}
-
-.h1 { 
-    font-size: 33px;
-    color: var(--red);
-    font-weight: bold;
-}
-
-.sidebar button {
-    all: unset;
-    display: block;
-}
-
-.sidebar button:hover {
-    background-color: blue;
-}
-
-
-
 .tile {
     padding-left: 10px;
     flex-basis: 320px;
@@ -51,18 +10,20 @@ header {
     background-color: white;
 }
 
-.tile:nth-child(odd){
+.tile:nth-child(3n){
+    background-color: var(--background3);
+}
+
+.tile:nth-child(3n+1){
     background-color: var(--background1);
 }
 
-.tile:nth-child(even){
+.tile:nth-child(3n+2){
     background-color: var(--background2);
 }
 
 .tile:hover {
-    position: relative;
-    bottom: 10px;
-
+    background-color: var(--background4);
 }
 
 .online {
@@ -78,16 +39,11 @@ header {
 }
 
 .tile h2 {
-    color: var(--foreground0);
+    color: black;
     width: 192px;
     display: inline;
     float: left;
     margin-left: 10px;
-}
-
-.pageContent {
-    flex-grow: 10;
-    color: blue;
 }
 
 .computers {
@@ -98,22 +54,6 @@ header {
 
 .computers :last-child {
     border-bottom-width: 1px
-}
-
-.menu {
-    float: right;
-    display: inline;
-    z-index: 10;
-    padding-right: 25px;
-}
-
-.menu:hover {
-    color: black;
-    background-color: red;
-}
-
-.menu:hover~.sidebar{
-    display:block;
 }
 
 .material-symbols-outlined {
