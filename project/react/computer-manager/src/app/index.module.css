@@ -10,15 +10,11 @@
     background-color: white;
 }
 
-.tile:nth-child(3n){
-    background-color: var(--background3);
-}
-
-.tile:nth-child(3n+1){
+.tile:nth-child(even){
     background-color: var(--background1);
 }
 
-.tile:nth-child(3n+2){
+.tile:nth-child(odd){
     background-color: var(--background2);
 }
 
@@ -39,7 +35,7 @@
 }
 
 .tile h2 {
-    color: black;
+    color: var(--blue);
     width: 192px;
     display: inline;
     float: left;

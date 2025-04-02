@@ -18,8 +18,9 @@ header {
 }
 
 .sidebar {
-    background-color: var(--background2);
+    background-color: var(--background3);
     display: none;
+    flex-grow: 0.7;
 }
 
 .h1 { 
@@ -31,10 +32,23 @@ header {
 .sidebar a {
     all: unset;
     display: block;
+    font-size: 33px;
+    font-weight: bold;
+    background-color: var(--green);
+    position: relative;
+    border-radius: 20px 0 0 20px;
+    transition: background-color 0.1s;
+    padding-left: 10px;
+    color: var(--background1);
 }
 
+.sidebar a:nth-child(even){
+    background-color: var(--blue);
+}
+
+
 .sidebar a:hover {
-    background-color: blue;
+    left: 10px;
 }
 
 .menu {
@@ -50,13 +64,13 @@ header {
 }
 
 .pageContent {
-    flex-grow: 10;
+    flex-grow: 5;
     color: blue;
 }
 
 .content {
     min-height: 100%;
-    background-color: var(--background1);
+    background-color: var(--background0);
 }
 
 .material-symbols-outlined {

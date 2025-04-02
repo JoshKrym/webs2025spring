@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
 :root {
   --background0: #fbf1c7;
   --background1: #ebdbb2;
@@ -17,6 +20,15 @@
   --foreground3: #665c54;
   --foreground4: #7c6f64;
 }
+*/
+
+:root {
+    --background0:#FFFBCA;
+    --background1:#AEEA94;
+    --background2:#AEEA94;
+    --foreground0:#4635B1;
+    --foreground1:#B771E5;
+}
 /*
 @media (prefers-color-scheme: dark) {
   :root {
@@ -34,7 +46,7 @@ body {
 body {
   color: var(--foreground0);
   background: var(--background0);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
