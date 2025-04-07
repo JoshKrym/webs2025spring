@@ -1,0 +1,30 @@
+.computerImage {
+    display: inline-block;
+}
+
+.features {
+    display: inline;
+    list-style-position: inside;
+}
+/*
+.MemChart {
+    display: none;
+}
+
+.CPUChart {
+    display: none;
+}
+
+.MEM {
+    background-color: blue;
+}
+
+.MEM:hover {
+    background-color: red;
+}
+
+.MEM:hover \ .MemChart {
+    display: block;
+    background-color: red;
+}
+*/

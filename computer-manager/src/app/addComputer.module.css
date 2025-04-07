@@ -1,0 +1,31 @@
+.computerImage {
+    display: inline-block;
+}
+
+.features {
+    display: inline;
+}
+
+.ComputerForm {
+    font-size: 2em;
+    color: var(--foreground1);
+}
+
+.ComputerForm input {
+    all: unset;
+    height: 2em;
+    width: 15em;
+    background-color: var(--background1);
+    border-radius: 25px;
+    padding-left: 0.5em;
+    margin-bottom: 10px;
+    color: var(--foreground0);
+}
+
+.ComputerForm input:focus {
+    background-color: var(--background2);
+}
+
+.ComputerForm .FileForm {
+    all: initial;
+}

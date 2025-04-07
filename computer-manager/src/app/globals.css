@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*
+:root {
+  --background0: #fbf1c7;
+  --background1: #ebdbb2;
+  --background2: #d5c4a1;
+  --background3: #bdae93;
+  --background4: #a89984;
+  --red: #9d0006;
+  --green: #79740e;
+  --yellow: #b57614;
+  --blue: #076678;
+  --purple: #8f3f71;
+  --aqua: #427b58;
+  --orange: #af3a03;
+  --foreground0: #282828;
+  --foreground1: #3c3836;
+  --foreground2: #504945;
+  --foreground3: #665c54;
+  --foreground4: #7c6f64;
+}
+*/
+
+:root {
+    --background0:#FFFBCA;
+    --background1:#AEEA94;
+    --background2:#0EBA74;
+    --foreground0:#4635B1;
+    --foreground1:#B771E5;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}*/
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground0);
+  background: var(--background0);
+  font-family: "Roboto Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+body {
+    margin: 0px;
+}
+
+/*h1 {
+    text-align: center;
+    display: inline;
+}*/
+
+header {
+    display: inline;
+}
