@@ -37,7 +37,7 @@ function ComputerTile({computerName, ipAddress, image}){
                 <Image
                  className={styles.computerImage}
                  src="/laptop_windows.svg"
-                 alt="Next.js logo"
+                 alt="A default laptop stand-in image"
                  width={256}
                  height={256}
                  priority
