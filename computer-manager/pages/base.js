@@ -37,6 +37,7 @@ export function Base({ children }) {
                     <a href="/">Computers</a>
                     <a href="/addComputer">Add Computer</a>
                     <a>Settings</a>
+                    <a href="https://github.com/JoshKrym/webs2025spring">Github</a>
                 </div>
             </ThisContext.Provider>
         </div>
