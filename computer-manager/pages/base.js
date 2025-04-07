@@ -36,7 +36,7 @@ export function Base({ children }) {
                 <div className={styles.sidebar} style={{display: sidebarHidden}}>
                     <a href="/">Computers</a>
                     <a href="/addComputer">Add Computer</a>
-                    <a href="/settings">Settings</a>
+                    <a>Settings</a>
                 </div>
             </ThisContext.Provider>
         </div>
